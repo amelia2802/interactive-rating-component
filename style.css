@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali&family=Poppins&display=swap');
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey:hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+*{
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.93em;
+    background-color: hsl(210, 13%, 6%);
+}
+
+#card-body{
+    width: 40%;
+    margin: auto;
+    background:linear-gradient(152deg,var(--darkBlue),var(--veryDarkBlue));
+    margin-top: 6em;
+    border-radius: 3%;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+#report-card{
+    width: 40%;
+    margin: auto;
+    background:linear-gradient(152deg,var(--darkBlue),var(--veryDarkBlue));
+    margin-top: 6em;
+    border-radius: 3%;
+    padding: 3em;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thank-you{
+    width:11em;
+}
+
+.result{
+    margin: 1.7rem 0;
+    color: var(--orange);
+    background: var(--darkBlue);
+    padding: .4rem 1rem;
+    border-radius: 6rem;
+}
+
+.logo{
+    background-color: var(--darkBlue);
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    display: grid;
+}
+
+.logo-img{
+    margin: auto;
+
+}
+
+h1{
+    color: var(--white);
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+.msg{
+    color: var(--lightGrey);
+    line-height: 25px;
+}
+
+.rating-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.rating-item label{
+    width: 1.8em;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    color: var(--lightGrey);
+    background-color: var(--darkBlue);
+    border-radius: 100%;
+}
+
+input{
+    display: none;
+}
+
+.rating-item label:hover{
+    border: 2px solid var(--orange);
+}
+
+.submit-btn{
+    width: 100%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1.1rem;
+    border-radius: 6rem;
+    border: none;
+    color: azure;
+    font-size: 1.1rem;
+    background-color: var(--orange);
+}
+
+.attribution { font-size: 11px; text-align: center;
+color: var(--lightGrey); }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 600px){
+    #card-body,#report-card{
+        width: 70%;
+    }
+}

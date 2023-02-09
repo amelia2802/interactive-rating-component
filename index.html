@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+
+    <main id="card">
+      <section id="card-body">
+        <div class="logo">
+          <img class="logo-img" src="./images/icon-star.svg" />
+        </div>
+        <h1>How did we do?</h1>
+        <p class="msg">Please let us know how we did with your support request.All feedback is appreciated 
+        to help us improve our offering!</p>
+        <form class="rating-item">
+          <label for="oneVote">1</label>
+          <input type="radio" id="oneVote" name="rating" value="1">
+          <label for="twoVote">2</label>
+          <input type="radio" id="twoVote" name="rating" value="2">
+          <label for="threeVote">3</label>
+          <input type="radio" id="threeVote" name="rating" value="3">
+          <label for="fourVote">4</label>
+          <input type="radio" id="fourVote" name="rating" value="4">
+          <label for="fiveVote">5</label>
+          <input type="radio" id="fiveVote" name="rating" value="5">
+        </form>
+        <button type="submit" id="submit-btn" class="submit-btn" form="rating-item" value="Submit">Submit</button>
+      </section>
+      <section id="report-card"></section>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.linkedin.com/in/ameliadutta/">Amelia Dutta</a>.
+      </div>
+    </footer>
+    
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
